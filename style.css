@@ -80,6 +80,7 @@
   .header--nav--item {
   color: var(--white);
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   transition: all ease 0.5s;
   border-radius: 50px;
@@ -156,5 +157,125 @@ td {
 .subscription table tbody tr td {
   text-align: start;
   padding-left: 5px;
+}
+
+/* foods */
+.foods {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.foods .foods--title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.foods .food {
+  display: flex;
+  height: 100px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.foods .food:nth-child(2n) {
+  background-color: var(--grey);
+}
+
+.foods .food--img {
+  height: 100%;
+  width: 100px;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food .food--infos {
+  padding-left: 10px;
+}
+
+.food .food--infos .food--title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-top: 0.1rem;
+}
+
+.food .food--infos .food--description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% - 1.5rem);
+}
+
+/* blog */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.blog .blog--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.blog .blog--card {
+  width: 90%;
+  height: fit-content;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.blog .blog--card .blog--card--img {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+}
+
+.blog .blog--card .blog--card--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.blog .blog--card .blog--card--content {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* img divider */
+
+.img--divider {
+  border: none;
+  background-image: url("./assets/img-08.jpg");
+  width: 90%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
 }
 
