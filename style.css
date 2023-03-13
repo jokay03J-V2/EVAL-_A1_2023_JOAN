@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap");
+
+:root {
+  --orange: #ef8354;
+  --black: #2d3142;
+  --blue: #4f5d75;
+  --white: #ffff;
+  --grey: #eaebeb;
+}
+
+/* css reseter */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* header */
+.header .header--nav {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  background-color: var(--blue);
+  border-bottom: #bfc0c0 solid 1px;
+}
+
+.header .header--nav .header--nav--logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header .header--nav .header--nav--logo {
+  color: var(--white);
+  position: relative;
+  width: fit-content;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.header .header--nav .header--nav--logo::before {
+  content: '"';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateX(-100%);
+  color: var(--orange);
+}
+
+.header .header--nav .header--nav--logo::after {
+  content: '"';
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  transform: translateX(0%);
+  color: var(--orange);
+}
+
+.header .header--nav .header--nav--elements {
+  display: flex;
+  width: 50%;
+}
+
+.header .header--nav .header--nav--elements .header--nav--items {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3% 0px 3% 0%;
+  position: relative;
+}
+
+.header
+  .header--nav
+  .header--nav--elements
+  .header--nav--items
+  .header--nav--item {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  border-radius: 50px;
+  padding: 2px 2px;
+  text-align: center;
+  min-height: fit-content;
+  min-width: fit-content;
+  cursor: pointer;
+}
+
+.header .header--nav .header--nav--items .header--nav--item:hover {
+  background-color: var(--orange);
+}
+
+.header .header--nav .header--nav--elements .header--nav--btn--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header
+  .header--nav
+  .header--nav--elements
+  .header--nav--btn--container
+  .header--nav--btn {
+  background-color: var(--black);
+  border-radius: 5px;
+  color: var(--white);
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+/* subscription */
+.subscription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription .subscription--title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  margin: 10px 0px 10px 0px;
+  font-weight: 400;
+}
+
+.subscription table {
+  font-family: "Lato", sans-serif;
+  width: 90%;
+}
+
+.subscription table thead,
+tfoot {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.subscription table thead tr th {
+  padding: 10px 20px;
+  border: #bfc0c0 solid 1px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subscription table,
+td {
+  border: #bfc0c0 solid 1px;
+  text-align: start;
+  padding: 10px 5px;
+}
+
+.subscription table tbody tr td {
+  text-align: start;
+  padding-left: 5px;
+}
+
