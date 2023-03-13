@@ -70,7 +70,6 @@
   flex-direction: column;
   gap: 10px;
   padding: 3% 0px 3% 0%;
-  position: relative;
 }
 
 .header
@@ -82,11 +81,10 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
   border-radius: 50px;
   padding: 2px 2px;
   text-align: center;
-  min-height: fit-content;
   min-width: fit-content;
   cursor: pointer;
 }
@@ -132,6 +130,7 @@
 .subscription table {
   font-family: "Lato", sans-serif;
   width: 90%;
+  padding: 0px;
 }
 
 .subscription table thead,
@@ -150,7 +149,9 @@ tfoot {
 .subscription table,
 td {
   border: #bfc0c0 solid 1px;
-  text-align: start;
+}
+
+.subscription td {
   padding: 10px 5px;
 }
 
@@ -186,9 +187,7 @@ td {
 }
 
 .foods .food--img {
-  height: 100%;
   width: 100px;
-  aspect-ratio: 16/9;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,11 +240,7 @@ td {
 .blog .blog--card .blog--card--img {
   width: 100%;
   height: 100px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .blog .blog--card .blog--card--title {
