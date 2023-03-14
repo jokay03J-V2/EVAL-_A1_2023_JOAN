@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -60,23 +60,112 @@
     <hr class="img--divider">
     <section class="blog">
       <h2 class="blog--title">blog</h2>
-      <article class="blog--card"><img src="./assets/img-09.jpg" alt="post image" class="blog--card--img">
-        <h3 class="blog--card--title">un super titre</h3>
-        <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
-          architecto quod nam veniam
-          consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
-          consectetur possimus.</p>
-      </article>
-      <article class="blog--card"><img src="./assets/img-10.jpg" alt="post image" class="blog--card--img">
-        <h3 class="blog--card--title">un super titre</h3>
-        <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
-          architecto quod nam veniam
-          consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
-          consectetur possimus.</p>
-      </article>
+      <div class="blog--cards">
+        <article class="blog--card"><img src="./assets/img-09.jpg" alt="post image" class="blog--card--img">
+          <h3 class="blog--card--title">un super titre</h3>
+          <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.</p>
+        </article>
+        <article class="blog--card"><img src="./assets/img-10.jpg" alt="post image" class="blog--card--img">
+          <h3 class="blog--card--title">un super titre</h3>
+          <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.</p>
+        </article>
+
+        <article class="blog--card"><img src="./assets/img-10.jpg" alt="post image" class="blog--card--img">
+          <h3 class="blog--card--title">un super titre</h3>
+          <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.</p>
+        </article>
+        <article class="blog--card"><img src="./assets/img-10.jpg" alt="post image" class="blog--card--img">
+          <h3 class="blog--card--title">un super titre</h3>
+          <p class="blog--card--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            architecto quod nam veniam
+            consequatur modi tempore, ab libero hic dicta reiciendis maxime illo qui, vero voluptate necessitatibus
+            consectetur possimus.</p>
+        </article>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <h2 class="footer--title">formulaire de contact</h2>
+    <p class="footer--paragraph">Pour plus de details vous pouvez consulter notre site <a
+        href="https://www.edenschool.fr/" class="footer--link">ici</a></p>
+    <form class="form">
+      <article class="infos">
+        <h3 class="infos--title">informations de contact</h3>
+        <fieldset class="infos--radios">
+          <legend>Quel est votre age</legend>
+          <div>
+            <input type="radio" id="12-14" name="age" value="12-14" checked>
+            <label for="12-14">12-14</label>
+          </div>
+          <div>
+            <input type="radio" id="15-17" name="age" value="15-17">
+            <label for="15-17">15-17</label>
+          </div>
+          <div>
+            <input type="radio" id="18-19" name="age" value="18-19">
+            <label for="18-19">18-19</label>
+          </div>
+        </fieldset>
+        <fieldset class="infos--fieldsets">
+          <label for="name">nom:</label>
+          <input required type="text" name="name" id="name" placeholder="Saisissez votre nom" class="infos--input">
+        </fieldset>
+        <fieldset class="infos--fieldsets">
+          <label for="mail">mail:</label>
+          <input required type="email" name="mail" id="mail" placeholder="Saisissez votre mail" class="infos--input">
+        </fieldset>
+      </article>
+      <article class="infos">
+        <h3 class="infos--title">votre jeu préféré</h3>
+        <fieldset class="infos--fieldsets">
+          <label for="name">Choisissez une console:</label>
+          <select class="infos--input infos--select">
+            <option disabled hidden selected>--Choisissez une console--</option>
+            <option value="ps4">ps4</option>
+            <option value="xbox">xbox</option>
+          </select>
+        </fieldset>
+        <fieldset class="infos--fieldsets">
+          <label for="name">Choisissez un jeu:</label>
+          <select class="infos--input infos--select">
+            <option disabled hidden selected>--Choisissez un jeu--</option>
+            <option value="roblox">roblox</option>
+            <option value="fortnite">fortnite</option>
+          </select>
+        </fieldset>
+      </article>
+      <article class="infos">
+        <h3 class="infos--title">votre message</h3>
+        <fieldset class="infos--fieldsets">
+          <textarea required class="infos--message" placeholder="Saisissez votre message"></textarea>
+        </fieldset>
+        <fieldset class="infos--fieldsets">
+          <label for="password">cryptage du message:</label>
+          <input required type="password" name="cryptage" id="password" placeholder="Saisissez votre code"
+            class="infos--input">
+        </fieldset>
+      </article>
+      <button type="submit" class="btn--submit">Envoyer votre message</button>
+    </form>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
