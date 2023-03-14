@@ -22,7 +22,7 @@
           <li class="header--nav--item">contact</li>
         </ul>
         <div class="header--nav--btn--container">
-          <button class="header--nav--btn">dark</button>
+          <button class="header--nav--btn" id="dark-btn">dark</button>
         </div>
       </div>
     </nav>
@@ -124,45 +124,45 @@
             <label for="18-19">18-19</label>
           </div>
         </fieldset>
-        <fieldset class="infos--fieldsets">
+        <div class="infos--inputs">
           <label for="name">nom:</label>
           <input required type="text" name="name" id="name" placeholder="Saisissez votre nom" class="infos--input">
-        </fieldset>
-        <fieldset class="infos--fieldsets">
+        </div>
+        <div class="infos--inputs">
           <label for="mail">mail:</label>
           <input required type="email" name="mail" id="mail" placeholder="Saisissez votre mail" class="infos--input">
-        </fieldset>
+        </div>
       </article>
-      <article class="infos">
+      <fieldset class="infos">
         <h3 class="infos--title">votre jeu préféré</h3>
-        <fieldset class="infos--fieldsets">
+        <div class="infos--inputs">
           <label for="name">Choisissez une console:</label>
           <select class="infos--input infos--select">
             <option disabled hidden selected>--Choisissez une console--</option>
             <option value="ps4">ps4</option>
             <option value="xbox">xbox</option>
           </select>
-        </fieldset>
-        <fieldset class="infos--fieldsets">
+        </div>
+        <div class="infos--inputs">
           <label for="name">Choisissez un jeu:</label>
           <select class="infos--input infos--select">
             <option disabled hidden selected>--Choisissez un jeu--</option>
             <option value="roblox">roblox</option>
             <option value="fortnite">fortnite</option>
           </select>
-        </fieldset>
-      </article>
-      <article class="infos">
+        </div>
+      </fieldset>
+      <fieldset class="infos">
         <h3 class="infos--title">votre message</h3>
-        <fieldset class="infos--fieldsets">
+        <div class="infos--inputs">
           <textarea required class="infos--message" placeholder="Saisissez votre message"></textarea>
-        </fieldset>
-        <fieldset class="infos--fieldsets">
+        </div>
+        <div class="infos--inputs">
           <label for="password">cryptage du message:</label>
           <input required type="password" name="cryptage" id="password" placeholder="Saisissez votre code"
             class="infos--input">
-        </fieldset>
-      </article>
+        </div>
+      </fieldset>
       <button type="submit" class="btn--submit">Envoyer votre message</button>
     </form>
   </footer>
