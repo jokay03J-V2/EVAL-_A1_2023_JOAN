@@ -334,6 +334,7 @@ td {
   align-items: center;
   height: fit-content;
   width: fit-content;
+  border: none;
 }
 
 .footer .form .infos .infos--title {
@@ -349,17 +350,17 @@ td {
   width: 100%;
 }
 
-.footer .form .infos .infos--fieldsets {
+.footer .form .infos .infos--inputs {
   border: none;
   margin: 10px 0px;
 }
 
-.footer .form .infos .infos--fieldsets .infos--input {
+.footer .form .infos .infos--inputs .infos--input {
   border-radius: 10px;
   padding: 10px;
 }
 
-.footer .form .infos .infos--fieldsets .infos--message {
+.footer .form .infos .infos--inputs .infos--message {
   border-radius: 10px;
   min-width: 200px;
   min-height: 50px;
@@ -405,5 +406,19 @@ td {
     width: 40vw !important;
     height: 40vh !important;
   }
+}
+
+.easter--egg--container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: var(--blue);
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
