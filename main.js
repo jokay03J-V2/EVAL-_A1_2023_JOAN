@@ -1,4 +1,5 @@
 import "./style.css";
+const darkBtn = document.getElementById("dark-btn");
 const foodsContainer = document.getElementById("foods");
 const plats = [
   {
@@ -42,4 +43,9 @@ for (let indexPlats = 0; indexPlats < plats.length; indexPlats++) {
         </div>
       </article>`;
 }
+
+darkBtn.addEventListener("click", () => {
+  document.body.classList.add("easter--egg--container");
+  document.body.innerHTML = `<h1>c'est une blague...rechargez la page !</h1>`;
+});
 
